@@ -340,7 +340,7 @@ def get_progress_bar(
             ] + row_contents
         progress_table.add_row(*row_contents)
         live = Live(Padding(progress_table, (1, 0, 1, 0)), refresh_per_second=10)
-        live.start(refresh=live._renderable is not None)
+        #live.start(refresh=live._renderable is not None)
         return job_progress, live
 
 
